@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Della+Respira&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Pacifico&family=Pangolin&family=Playfair:wght@300&family=Roboto:ital,wght@0,400;0,700;1,300&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/42696fbbae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Anime Search Engine</title>
+  </head>
+  <body>
+
+
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <figure class="nav__logo--wrapper">
+            <img src="./assets/logo.png" class="nav__logo" />
+          </figure>
+          <div class="nav__link--list">
+            <div class="nav__link">
+              <a href="#search" class="nav__link--anchor link__hover">Search</a>
+            </div>
+            <div class="nav__link">
+              <a href="#trending" class="nav__link--anchor link__hover"
+                >Trending</a
+              >
+            </div>
+            <div class="nav__link">
+              <a href="#popular" class="nav__link--anchor link__hover"
+                >Popular</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <header>
+        <div class="header__container">
+          <figure class="header__img--wrapper">
+            <img src="./assets/goku.gif" class="header__img" alt="" />
+          </figure>
+          <h1 class="title">Every Anime in one search engine.</h1>
+          <img src="./assets/anime-search-logo.gif" class="search" />
+        </div>
+      </header>
+    </section>
+
+
+    <section id="search">
+      <div class="container">
+        <div class="row">
+          <form class="search__form" onsubmit="showSearchRes(event)">
+            <input
+              type="text"
+              class="search__box"
+              placeholder="Search"
+              name="search__term"
+              required
+            />
+            <button class="search__button">
+              <i class="fa-brands fa-searchengin" style="color: #d5f406;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="trending">
+      <div class="container">
+        <div class="row">
+          <h2 class="subtitle">Trending</h2>
+          <div class="anime__list trending__list">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="popular">
+      <div class="container">
+        <div class="row">
+          <h2 class="subtitle">Popular</h2>
+          <div class="anime__list popular__list">
+            <i class="fa-solid fa-spinner" style="color: #f46a1f"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer__container">
+            <a href="#">
+              <figure class="footer__logo--wrapper">
+                <img src="./assets/cookie-eating.gif" class="footer__logo" alt="" />
+              </figure>
+            </a>
+            <div class="footer__link--list">
+              <div class="footer__link">
+                <a href="#search" class="footer__link--anchor link__hover"
+                  >Search</a
+                >
+              </div>
+              <div class="footer__link">
+                <a href="#trending" class="footer__link--anchor link__hover"
+                  >Trending</a
+                >
+              </div>
+              <div class="footer__link">
+                <a href="#popular" class="footer__link--anchor link__hover"
+                  >Popular</a
+                >
+              </div>
+            </div>
+            <div class="footer__copyright">
+              Copyright &copy; 2023 Jose Reyes
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="home.js"></script>
+</html>
